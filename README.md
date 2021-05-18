@@ -1,4 +1,4 @@
-# Trials for Text Summarization Model
+# Text Summarization Model
 ### Substractive Summarization
 * [Seq2Seq with Bahdanau Attention
 ](https://github.com/jyshin0926/Text-Summarization/blob/master/seq2seq_summarization_bdnau.ipynb)
