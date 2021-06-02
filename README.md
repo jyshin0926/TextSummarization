@@ -47,7 +47,9 @@ thing special
    * Performance
      * Rouge Score : high fmeasure = 0.0826, low precision=0.0622(10 epochs)
      * In colab 25GB RAM environment, training model with batch size as 2 crashed my session and batch size as 16 ran out ouf memory. So I used google bigbird pretrained model.
-     * In paper, performance with CNN_dailymail as test dataset for shoreter summarization was pretty good(R-L BIGBIRD-Pegasus: 40.74, BIGBIRD-ROBERTa: 36.61), but it seems pretrained model doesn't.(Pretrained model trained with PubMed dataset, so I think BigBird improves performance when testing this model with dataset that same as the training dataset.)
+     * In paper, performance with CNN_dailymail as test dataset for shoreter summarization was pretty good(R-L BIGBIRD-Pegasus: 40.74, BIGBIRD-ROBERTa: 36.61), but it seems pretrained model doesn't.
+     * Pretrained model trained with PubMed dataset, so I think BigBird improves performance when testing this model with dataset which is same as the training dataset. 
+     * It also seems some relavant to Pegasus model. The paper,'PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization', says the model lead had decent performance on the two news datasets but was significantly worse on the two non-news datasets, which agrees findings of lead bias in news datasets.
      
 
 ### Extractive Summarization
