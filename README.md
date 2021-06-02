@@ -36,7 +36,7 @@ thing special
      * Predicted Summary of the Sample : great coffee
      * Actual Summary of the Sample : fresh n good
 
-* view code : [BigBird with Sparse Attention](https://github.com/jyshin0926/Text-Summarization/blob/master/seq2seq_summarization_bdnau.ipynb)
+* view code : [BigBird with Sparse Attention](https://github.com/jyshin0926/TextSummarization/blob/master/BigBird_UseSavedModel.ipynb)
    * Environment : Google Colab(python 3.7, tensorflow 2.0+, GPU, 25GB RAM)
    * Dataset : scientific_papers/pubmed(pretrained), cnn_dailymail(test) from TFDS
    * Model(used [Pretrained Model](https://github.com/google-research/bigbird) in this repository)
