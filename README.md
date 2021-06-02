@@ -23,7 +23,8 @@ thing special
    * Pre-processing : tokenizing(nltk), padding, tagging, word embddding(dim=300)
    * Model
      * Architecture
-     ![image](https://user-images.githubusercontent.com/46860669/120432352-c9141c00-c3b4-11eb-8754-c17a0162ebd8.png)
+     <right><img src="https://user-images.githubusercontent.com/46860669/120432352-c9141c00-c3b4-11eb-8754-c17a0162ebd8.png" width="300" height="300"></right>
+     
      * GELU approximation, Dropout, Layer normalization Funtion
      * Sine-Cosine Positional Encoding
      * Attention Mechanism : Multihead Attention Mechanism
