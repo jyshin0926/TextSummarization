@@ -3,8 +3,8 @@
 * [Seq2Seq with Bahdanau Attention
 ](https://github.com/jyshin0926/Text-Summarization/blob/master/seq2seq_summarization_bdnau.ipynb)
   * Environment : macOS BigSur(python 3.8, tensorflow 2.4.1, CPU)
-  * Dataset : Amazon Fine Food Reviews from Kaggle(lang: english)
-  * Pre-processing : tokenizing(nltk), padding, tagging, word-embedding(dim=128)
+  * Dataset : Amazon Fine Food Reviews from Kaggle(lang: English)
+  * Pre-processing : tokenizing(nltk), padding, tagging, word embedding(dim=128)
   * Model
     * Softmax approximation, Dropout, LSTM(3 encoder layer, Embedding Layer, Attention Layer, Concatenate Layer(to concatenate attention and decoder hidden state)
     * Attention mechanism : Bahdanau Attention
@@ -18,7 +18,12 @@ thing special
     * Actual Summary of the Sample : average in every way
 
 * [Transformer with MultiHead Attention](https://github.com/jyshin0926/Text-Summarization/blob/master/Transformers_summarization.ipynb)
+   * Environment : Google Colab(python 3.7, tensorflow 2.0+, GPU)
+   * Dataset : Amazon Fine Food Reviews from Kaggle(lang : Engligh) / Glove pre-trained vectors(to initialize word embedding)
+   * Pre-processing : tokenizing(nltk), padding, tagging, word embddding(dim=300)
    * Model
+     * Architecture
+     ![image](https://user-images.githubusercontent.com/46860669/120432352-c9141c00-c3b4-11eb-8754-c17a0162ebd8.png)
      * GELU approximation, Dropout, Layer normalization Funtion
      * Sine-Cosine Positional Encoding
      * Attention Mechanism : Multihead Attention Mechanism
