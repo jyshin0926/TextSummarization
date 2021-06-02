@@ -1,6 +1,6 @@
 # Text Summarization Model
 ### Substractive Summarization
-* [Seq2Seq with Bahdanau Attention
+* view code : [Seq2Seq with Bahdanau Attention
 ](https://github.com/jyshin0926/Text-Summarization/blob/master/seq2seq_summarization_bdnau.ipynb)
   * Environment : macOS BigSur(python 3.8, tensorflow 2.4.1, CPU)
   * Dataset : Amazon Fine Food Reviews from Kaggle(lang: English)
@@ -17,7 +17,7 @@ thing special
     * Predicted Summary of the Sample : not as good as i expected
     * Actual Summary of the Sample : average in every way
 
-* [Transformer with MultiHead Attention](https://github.com/jyshin0926/Text-Summarization/blob/master/Transformers_summarization.ipynb)
+* view code : [Transformer with MultiHead Attention](https://github.com/jyshin0926/Text-Summarization/blob/master/Transformers_summarization.ipynb)
    * Environment : Google Colab(python 3.7, tensorflow 2.0+, GPU)
    * Dataset : Amazon Fine Food Reviews from Kaggle(lang : Engligh) / Glove pre-trained vectors(to initialize word embedding)
    * Pre-processing : tokenizing(nltk), padding, tagging, word embddding(dim=300)
@@ -36,7 +36,7 @@ thing special
      * Predicted Summary of the Sample : great coffee
      * Actual Summary of the Sample : fresh n good
 
-* [BigBird with Sparse Attention](https://github.com/jyshin0926/Text-Summarization/blob/master/seq2seq_summarization_bdnau.ipynb)
+* view code : [BigBird with Sparse Attention](https://github.com/jyshin0926/Text-Summarization/blob/master/seq2seq_summarization_bdnau.ipynb)
    * Environment : Google Colab(python 3.7, tensorflow 2.0+, GPU, 25GB RAM)
    * Dataset : scientific_papers/pubmed(pretrained), cnn_dailymail(test) from TFDS
    * Model(used [Pretrained Model](https://github.com/google-research/bigbird) in this repository)
@@ -58,7 +58,7 @@ thing special
 
 
 ### Extractive Summarization
-* [TextRank Algorithm](https://github.com/jyshin0926/Text-Summarization/blob/master/TextRank_kor.ipynb)
+* view code : [TextRank Algorithm](https://github.com/jyshin0926/Text-Summarization/blob/master/TextRank_kor.ipynb)
 * Environment : macOS BigSur(python 3.7, tensorflow 2.4.1, CPU)
 * Dataset : newspaper3k(lang: Korean)
 * Pre-Processing : tokenizing(konlpy), removing stopwords
