@@ -6,17 +6,29 @@
   * Dataset : Amazon Fine Food Reviews from Kaggle(lang: english)
   * Pre-processing : tokenizing(nltk), padding, tagging, word-embedding(dim=128)
   * Model
-    * GELU approximation, Dropout, Layer normalization Funtion
-    * Sine-Cosine Positional Encoding
-    * Attention Mechanism : Multihead Attention Mechanism
-  * Average Validation BLEU : 0.1078(epoch 10)
-    * Sample Text : great price and fast shipping ! and i enjoy that
-  u do not have to drive so far away to get that stuff ! it is
-  so good to but it from online ! ! it was still fresh and good
-    * Predicted Summary of the Sample : great coffee
-    * Actual Summary of the Sample : fresh n good
+    * Softmax approximation, Dropout, LSTM(3 encoder layer, Embedding Layer, Attention Layer, Concatenate Layer(to concatenate attention and decoder hidden state)
+    * Attention mechanism : Bahdanau Attention
+  * Performance
+    * val_loss : 1.8389(epoch 20)
+    * Sample Text : this is a tough review to write because this pr
+oduct is average in every way you follow the instructions
+and you end up with macaroni and cheese not bad but no
+thing special
+    * Predicted Summary of the Sample : not as good as i expected
+    * Actual Summary of the Sample : average in every way
 
 * [Transformer with MultiHead Attention](https://github.com/jyshin0926/Text-Summarization/blob/master/Transformers_summarization.ipynb)
+   * Model
+     * GELU approximation, Dropout, Layer normalization Funtion
+     * Sine-Cosine Positional Encoding
+     * Attention Mechanism : Multihead Attention Mechanism
+   * Average Validation BLEU : 0.1078(epoch 10)
+     * Sample Text : great price and fast shipping ! and i enjoy that
+   u do not have to drive so far away to get that stuff ! it is
+   so good to but it from online ! ! it was still fresh and good
+     * Predicted Summary of the Sample : great coffee
+     * Actual Summary of the Sample : fresh n good
+
 * [BigBird with Sparse Attention](https://github.com/jyshin0926/Text-Summarization/blob/master/seq2seq_summarization_bdnau.ipynb)
 
 ### Extractive Summarization
