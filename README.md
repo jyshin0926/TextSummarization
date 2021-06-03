@@ -46,10 +46,10 @@ thing special
     * Decoder : Beam Search
    * Performance
      * Rouge Score : high fmeasure = 0.0826, low precision=0.0622(10 epochs)
-     * In colab 25GB RAM environment, training model with batch size as 2 crashed my session and batch size as 16 ran out ouf memory. So I used google bigbird pretrained model.
-     * In paper, performance with CNN_dailymail as test dataset for shoreter summarization was pretty good(R-L BIGBIRD-Pegasus: 40.74, BIGBIRD-ROBERTa: 36.61), but it seems pretrained model doesn't.
+     * In colab 25GB RAM environment, training model with batch size as 2 crashed my session and batch size as 16 ran out of memory. So I used google bigbird pretrained model.
+     * In paper, performance with CNN_dailymail as test dataset for shoreter summarization was pretty good(R-L BIGBIRD-Pegasus: 40.74, BIGBIRD-ROBERTa: 36.61), but pretrained model seems doesn't.
      * Pretrained model trained with PubMed dataset, so I think BigBird improves performance when testing this model with dataset which is same as the training dataset. 
-     * It also seems some relavant to Pegasus model. The paper, 'PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization', says the model lead had decent performance on the two news datasets but was significantly worse on the two non-news datasets, which agrees findings of lead bias in news datasets.
+     * It seems relavant to Pegasus model. The paper, 'PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization', says the model lead had decent performance on the two news datasets but was significantly worse on the two non-news datasets, which agrees findings of lead bias in news datasets.
      * Test dataset : PubMed
      <center><img src="https://user-images.githubusercontent.com/46860669/120441416-7ee46800-c3bf-11eb-8d50-c187c8eff268.png" width="300" height="300"></center>
      
@@ -62,7 +62,7 @@ thing special
 * Environment : macOS BigSur(python 3.7, tensorflow 2.4.1, CPU)
 * Dataset : newspaper3k(lang: Korean)
 * Pre-Processing : tokenizing(konlpy), removing stopwords
-* Considering TF-IDF, graph and TextRank Algorighm
+* Considering TF-IDF, graph and TextRank Algorithm
 * Performance
   * 원문 : 이에 따르면 보통 사람은 뇌의 10%를 사용할까 말까 한데 아인슈타인은 30%나 사용했다고 한다. 어떤 버전에서는 아인슈타인이 직접 그렇게 밝히기도 한다(?). 한때 학교에서도 들을 수 있던 믿거나 말거나 식의 이야기가 자취를 감추게 된 건 다행한 일이다. 과학자들에 의하면 우리 뇌는 10%만 사용되기는커녕 거의 언제나 100% 가동 중이다. 더구나 뇌는 막대한 유지비가 드는 비싼 기관이므로 90%를 사용 안 하고 놀려 둔다는 것은 진화론적인 관점에서도 있을 수 없는 일이다. 
 
